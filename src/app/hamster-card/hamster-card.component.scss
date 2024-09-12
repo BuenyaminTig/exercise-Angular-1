@@ -1,0 +1,44 @@
+.mainContainer{
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.card{
+    min-height: 550px;
+    background-color: white;
+    width: 400px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;  //Das Bild bleibt somit in der Karte
+    position: relative; //Dank diesem Befehl kann ich bei den buttons position absolute bottom 0 geben, ansosten wären die bottons ganz unten auf der Seite stadtt nur unten bei der Karte
+    img{
+        width: 100%;
+    }
+    p{
+        padding-left: 16px;
+        padding-right: 16px;
+        color: rgba(0,0,0,0.8);
+        font-size: 20px;
+    }
+    button{
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        background-color: white;
+        border: unset;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        cursor: pointer;
+        &:first-child{
+            left: 0;
+        }
+        &:last-child{
+            right: 0;
+            border-left: 1px solid rgba(0,0,0,0.3);
+        }
+        &:hover{
+            background-color: rgba(0,0,0,0.5);
+        }
+    }  
+}
+
