@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HamsterCardComponent } from './hamster-card/hamster-card.component';
+import { ProposalsComponent } from './proposals/proposals.component';
+import { ProfileRowComponent } from './profile-row/profile-row.component';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +12,27 @@ import { HamsterCardComponent } from './hamster-card/hamster-card.component';
   imports: [CommonModule,
     RouterOutlet,
     HeaderComponent,
-    HamsterCardComponent
+    HamsterCardComponent,
+    ProposalsComponent,
+    ProfileRowComponent
+    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'my-first-project';
+  postTexts = [
+    'Hallo, mein Name ist Freddy! Ich bin hier, um neue Freunde zu treffen!',
+    'Hallo zusammmen. Freut mich, dass ihr hier seid!',
+    'Hey, Mein Name ist Susanne. Ich bin 2 jahre alt.',
+    'Ich esse gerne Kekse.'
+  ];
+
+  postPics =[
+    './assets/img/hamsterPics/hamster1.jpg',
+    './assets/img/hamsterPics/hamster2.jpg',
+    './assets/img/hamsterPics/hamster3.png',
+    './assets/img/hamsterPics/hamster4.jpg',
+  ];
+
 }
