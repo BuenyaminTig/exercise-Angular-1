@@ -1,9 +1,5 @@
 .card{
     min-height: 550px;
-    background-color: white;
-    width: 400px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 4px;
     overflow: hidden;  //Das Bild bleibt somit in der Karte
     position: relative; //Dank diesem Befehl kann ich bei den buttons position absolute bottom 0 geben, ansosten wären die bottons ganz unten auf der Seite stadtt nur unten bei der Karte
     img{
@@ -22,14 +18,14 @@
         height: 32px;
         background-color: white;
         border: unset;
-        border-top: 1px solid rgba(0,0,0,0.3);
+        border-top: 1px solid rgba(0,0,0,0.1);
         cursor: pointer;
         &:first-child{
             left: 0;
         }
         &:last-child{
             right: 0;
-            border-left: 1px solid rgba(0,0,0,0.3);
+            border-left: 1px solid rgba(0,0,0,0.1);
         }
         &:hover{
             background-color: rgba(0,0,0,0.5);

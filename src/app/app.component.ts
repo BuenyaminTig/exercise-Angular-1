@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { HamsterCardComponent } from './hamster-card/hamster-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
+import { FriendboxComponent } from './friendbox/friendbox.component';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +15,8 @@ import { ProfileRowComponent } from './profile-row/profile-row.component';
     HeaderComponent,
     HamsterCardComponent,
     ProposalsComponent,
-    ProfileRowComponent
-    
+    ProfileRowComponent,
+    FriendboxComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
