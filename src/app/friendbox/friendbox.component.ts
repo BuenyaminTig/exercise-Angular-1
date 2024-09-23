@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FriendService } from '../friend.service';
 
 @Component({
   selector: 'app-friendbox',
@@ -10,12 +11,5 @@ import { Component } from '@angular/core';
 })
 export class FriendboxComponent {
 
-  names = ['Maurice', 'Karina', 'Patrick', 'Hans'];
-  texts = ['isst gerne', 'flirtet gerne', 'Gräbt gerne Löcher', 'Hamsterrad-Freak'];
-  images = [
-    './assets/img/hamsterPics/hamster5.jpg',
-    './assets/img/hamsterPics/hamster6.jpg',
-    './assets/img/hamsterPics/hamster7.jpg',
-    './assets/img/hamsterPics/hamster8.jpg',
-  ];
+  constructor(public fs: FriendService){}
 }

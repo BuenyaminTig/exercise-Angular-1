@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class FriendService {
 
+  names: string [] = [];
+  texts: string [] = [];
+  images: string [] = [];
+
   constructor() { }
+
+  addFriend(name:string, text:string, image:string){
+    this.names.push(name);
+    this.texts.push(text);
+    this.images.push(image);
+  }
 }

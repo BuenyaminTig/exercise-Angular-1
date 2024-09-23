@@ -6,6 +6,7 @@ import { HamsterCardComponent } from './hamster-card/hamster-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
 import { ProfileRowComponent } from './profile-row/profile-row.component';
 import { FriendboxComponent } from './friendbox/friendbox.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { FriendboxComponent } from './friendbox/friendbox.component';
     HamsterCardComponent,
     ProposalsComponent,
     ProfileRowComponent,
-    FriendboxComponent
+    FriendboxComponent,
+    MatIconModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
